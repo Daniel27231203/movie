@@ -1,0 +1,75 @@
+.Illuminous {
+  padding: 50px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h5 {
+      color: red;
+    }
+    h1 {
+      padding: 15px;
+    }
+    .block {
+      display: flex;
+      gap: 50px;
+      padding: 50px 0;
+      .box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .info {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          h3 {
+            color: red;
+          }
+        }
+      }
+    }
+    button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      box-shadow: 0px 0px 30px red;
+    }
+    button:active {
+        transform: scale(0.9);
+        transition: 0.1s ease-in-out;
+      }
+  }
+}
+
+// АДАПТАЦИЯ
+
+@media (max-width: 768px) {
+  .content {
+    h1 {
+      padding: 10px;
+    }
+
+    .block {
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 0;
+
+      .box {
+        .info {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+    }
+
+    button {
+      padding: 8px 16px;
+    }
+  }
+}
