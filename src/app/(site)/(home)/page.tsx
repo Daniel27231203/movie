@@ -1,6 +1,6 @@
-import HomePage from "@/components/pages/HomePage";
+import Pass from "@/components/pages/sectionPage/Pass";
 import React from "react";
 
-const page = () => <HomePage />;
+const page = () => <Pass />;
 
 export default page;
